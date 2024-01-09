@@ -62,7 +62,7 @@ function Payout() {
             </button>
           </div>
 
-          <div className=" mt-[24px] p-[12px] pb-0 rounded-[8px] bg-white">
+          <div className=" mt-[24px] p-[12px] shadow-sm shadow-[rgba(26, 24, 30, 0.04)] box-shadow-table pb-0 rounded-[8px] bg-white">
             {/* table input and filter */}
 
             <div className="flex items-center justify-between ">

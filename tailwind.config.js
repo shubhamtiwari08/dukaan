@@ -24,6 +24,7 @@ module.exports = {
         "custom-white-100": "#fafafa",
         "custom-white-800": "#ffffff",
       },
+      
     },
   },
   plugins: [],

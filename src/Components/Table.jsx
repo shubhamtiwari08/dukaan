@@ -2,7 +2,7 @@ import React from "react";
 
 const Table = ({ payout, data }) => {
   return (
-    <div className=" w-full ">
+    <div className=" w-full">
       <table className="w-full text-[14px]   font-galano leading-[20px]  text-['#1a181e]">
         <thead className="bg-[#f2f2f2] text-[14px] font-galano leading-[20px] font text-['#1a181e] text-left  ">
           <tr>
