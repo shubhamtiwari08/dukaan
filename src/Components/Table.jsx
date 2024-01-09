@@ -49,7 +49,7 @@ const Table = ({ payout, data }) => {
               {item.transactionid}
             </td>
             <td
-              className={`lg:py-[14px] text-[#1a181e] text-[8px] px-[12px] text-left lg:w-80`}
+              className={`lg:py-[14px] text-[#1a181e] text-[8px] lg:text-[14px] px-[12px] text-left lg:w-80`}
             >
               {item.refundDate}
             </td>
