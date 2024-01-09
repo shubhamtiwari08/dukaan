@@ -4,16 +4,9 @@ import Table from '../Components/Table';
 import { payments, refunds } from '../utils/data';
 
 function Payout() {
-    const [selectedTab, setSelectedTab] = useState("payouts");
-    const activeTableStyle = (tab) => {
-      return {
-        color: selectedTab === tab ? "white" : "gray",
-        backgroundColor: selectedTab === tab ? "#146eb4" : "#ccc",
-      };
-    };
-    const handleTabClick = (tab) => {
-      // setSelectedTab(tab);
-    };
+    
+    
+   
   return (
     <div className="m-[32px] max-h-svh overflow-scroll-y">
     <div className="flex justify-between items-center">
@@ -45,27 +38,20 @@ function Payout() {
     </div>
     <div className=" mt-[32px] ">
       <div>
-        <p className="text-[20px] text-[Galano Grotesque] leading-[28px] font-medium text-[#1a181e]">
+        <p className="text-[20px] text-[Galano Grotesque] leading-[28px] font-medium text-[#1a181e] ">
           Transactions | This Month
         </p>
         <div className="mt-[20px] flex gap-[16px]">
           <button
-            className={`py-[6px] px-[16px] bg-custom-gray-200  rounded-full text-sm text-custom-gray-600 ${
-              selectedTab === "payouts" && "active-tab"
-            }`}
-            onClick={() => handleTabClick("payouts")}
-            style={activeTableStyle("payouts")}
+            className={`py-[6px] px-[16px] bg-custom-gray-200  rounded-full text-sm text-custom-gray-600`}
           >
             Payouts (22)
           </button>
           <button
-            className={`py-[6px] px-[16px] bg-custom-gray-200  rounded-full text-sm text-[#808080] ${
-              selectedTab === "payouts" && "active-tab"
-            }`}
-            style={activeTableStyle("refunds")}
-            onClick={() => handleTabClick("refunds")}
+            className={`py-[6px] px-[16px] bg-[#146eb4] rounded-full text-sm text-[#fff]`}
+            
           >
-            Refunds (2)
+            Refunds (6)
           </button>
         </div>
 
@@ -95,8 +81,8 @@ function Payout() {
 
           <div className=" mt-[10px]">
             <Table
-              payout={selectedTab === "payouts" ? true : false}
-              data={selectedTab === "payouts" ? payments : refunds}
+              
+              data={ refunds}
             />
           </div>
         </div>

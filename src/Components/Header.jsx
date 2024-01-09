@@ -7,11 +7,11 @@ import Search from './Search'
 function Header() {
 
 
-    const locaiton = useLocation()
+    const {pathname} = useLocation()
 
-    console.log(locaiton)
+ 
 
-    const title = "hello"
+    const title = pathname.split("/")[1]
   
 
   return (
@@ -20,7 +20,7 @@ function Header() {
       <div className="flex items-center gap-x-[16px] ">
         <p className="text-[20px] capitalize">{title || " Home"}</p>
         <div className="flex items-center gap-x-[6px] text-[12px] leading-[16px] text-[#4d4d4d] font-normal">
-          <img src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704741470/Help_dmc0rf.png" alt="question-mark" />
+          <img src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704782319/blackquestion_h0oxbs.svg" alt="question-mark" />
           <p>How it works</p>
         </div>
       </div>

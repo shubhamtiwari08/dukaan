@@ -29,7 +29,7 @@ const AmountCard = ({
               {title}
             </p>
             <img
-              src={color ? "https://res.cloudinary.com/dmyost0l3/image/upload/v1704741470/Help_dmc0rf.png" : "https://res.cloudinary.com/dmyost0l3/image/upload/v1704741470/Help_dmc0rf.png"}
+              src={color ? "https://res.cloudinary.com/dmyost0l3/image/upload/v1704782318/white_svg_cawwpi.svg" : "https://res.cloudinary.com/dmyost0l3/image/upload/v1704782319/blackquestion_h0oxbs.svg"}
               alt="question mark"
             />
           </div>

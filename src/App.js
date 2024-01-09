@@ -9,7 +9,7 @@ function App() {
        <div className="fixed top-0 left-0">
        <Sidebar/>
        </div>
-      <div className="w-full ml-52">
+      <div className="w-full ml-[212px]">
         {" "}
         <Header />
         <MainRoutes />
