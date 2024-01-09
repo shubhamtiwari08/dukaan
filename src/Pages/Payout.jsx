@@ -88,12 +88,13 @@ function Payout() {
               </div>
 
               <div className="flex gap-[10px] lg:gap-[20px] ">
-                <button className="flex items-center gap-[6px] py-[6px] px-[10px] border border-custom-gray-300 rounded bg-white text-custom-gray-700">
-                  <p>Sort</p>
+                <button className="flex items-center gap-[2px] lg:gap-[6px]  py-[6px] px-[10px] border border-custom-gray-300 rounded bg-white text-custom-gray-700">
+                  <p className="text-[12px]">Sort</p>
 
                   <img
                     src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704746180/sortbtn_riji7m.svg"
                     alt="sort svg"
+                    className="w-[10px]"
                   />
                 </button>
 
@@ -101,6 +102,7 @@ function Payout() {
                   <img
                     src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704746181/downloadbtn_unkgtw.png"
                     alt="download svg"
+                    className="w-10 lg:w-6"
                   />
                 </button>
               </div>
