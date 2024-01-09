@@ -2,10 +2,13 @@ import React from "react";
 import { sideBarOptionDetails } from "../utils/options";
 import SidebarOptions from "./SidebarOptions";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 
-const Sidebar = () => {
+const Sidebar = ({handleToggle}) => {
   return (
     <div className="py-[16px] px-[10px]  text-custom-gray-300 h-screen flex flex-col justify-between bg-[#1E2640] text-white ">
+     <div className="mb-2 lg:hidden" onClick={handleToggle}><FontAwesomeIcon icon={faClose}/></div>
       <>
         <div className="flex flex-col gap-y-[24px]  ">
           <div>

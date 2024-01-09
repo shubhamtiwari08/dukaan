@@ -31,7 +31,7 @@ function Payout() {
 
       {/* amount cards */}
 
-      <div className="mt-[24px] flex justify-between gap-x-[20px] w-full">
+      <div className="mt-[24px] flex lg:flex-row gap-2 flex-col justify-between gap-x-[20px] w-full">
         <AmountCard
           title={"Next Payout"}
           orderNumber={23}
@@ -72,7 +72,7 @@ function Payout() {
             {/* table input and filter */}
 
             <div className="flex items-center justify-between ">
-              <div className="px-[16px] py-[10px] border border-custom-gray-300 rounded flex gap-[8px]  w-60  text-custom-gray-600 items-center ">
+              <div className="px-[16px] py-[10px] border border-custom-gray-300 rounded flex gap-[8px]  w-60  text-custom-gray-600 items-center mr-2 lg:mx-0 ">
                 <img
                   src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704744891/search_qx2ki6.svg"
                   alt="search-icon"
@@ -80,14 +80,14 @@ function Payout() {
                 />
                 <input
                   className="font-galano w-full bg-inherit placeholder-[#999]
-                text-[14px] leading-[20px] pb-[3px]
+                text-[14px] leading-[20px] pb-[3px] 
                 "
                   type="text"
                   placeholder="Order ID or transaction ID"
                 />
               </div>
 
-              <div className="flex gap-[20px] ">
+              <div className="flex gap-[10px] lg:gap-[20px] ">
                 <button className="flex items-center gap-[6px] py-[6px] px-[10px] border border-custom-gray-300 rounded bg-white text-custom-gray-700">
                   <p>Sort</p>
 
