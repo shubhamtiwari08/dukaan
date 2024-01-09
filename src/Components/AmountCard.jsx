@@ -28,7 +28,7 @@ const AmountCard = ({
       <div
         className={`h-[118px] p-5 ${
           nextPayout ? "rounded-t-lg" : "rounded-lg"
-        } shadow flex-col justify-start items-start gap-4 flex`}
+        } shadow flex-col justify-start items-start gap-4 flex box-shadow-amount-card`}
         style={{ backgroundColor: containerBackgroundColor }}
       >
         <div className="self-stretch h-[78px] flex-col justify-start items-start gap-4 flex">
@@ -55,7 +55,7 @@ const AmountCard = ({
                   >
                     {orderNumber} orders
                   </p>
-                  <img src={rightArrowImage} alt="arrow" />
+                  <img src={rightArrowImage} alt="arrow" className="mt-[3px]" />
                 </div>
               </div>
             )}

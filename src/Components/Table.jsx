@@ -44,7 +44,7 @@ const Table = ({ payout, data }) => {
                 </td>
                 <td className="py-[14px] px-[12px] flex items-center gap-[8px] text-[#1a181e] pl-10 w-80">
                   <div
-                    className={`h-[8px] w-[8px] rounded-full ${
+                    className={`h-[10px] w-[10px] mt-[5px] rounded-full ${
                       item.status === "Processing"
                         ? "bg-gray-400"
                         : "bg-[#17b31b]"
