@@ -6,10 +6,9 @@ import { payments, refunds } from "../utils/data";
 function Payout() {
   return (
     <div className="m-[32px] max-h-svh overflow-scroll-y">
-
-        {/* overview tab */}
+      {/* overview tab */}
       <div className="flex justify-between items-center">
-        <p className="leading-[28px] font-medium font-galano text-[20px] text-[#1a181e] ">
+        <p className="leading-[28px] font-semibold font-galano text-[20px] text-[#1a181e] ">
           Overview
         </p>
         <div className="w-[140px] h-[36px] rounded-[4px] flex items-center  px-[14px] pb-[8px] gap-x-[6px] bg-[#ffffff] border-[1px] border-[#d9d9d9]">
@@ -24,7 +23,7 @@ function Payout() {
         </div>
       </div>
 
-       {/* amount cards */}
+      {/* amount cards */}
 
       <div className="mt-[24px] flex justify-between gap-x-[20px] w-full">
         <AmountCard
@@ -45,26 +44,25 @@ function Payout() {
 
       {/* table and tabs */}
 
-      <div className=" mt-[32px]">
+      <div className=" mt-[32px] ">
         <div>
-          <p className="text-[20px] font-galano leading-[28px] font-medium text-[#1a181e] ">
+          <p className="text-[20px] font-galano leading-[28px] font-semibold text-[#1a181e] ">
             Transactions | This Month
           </p>
           <div className="mt-[20px] flex gap-[16px]">
             <button
-              className={`py-[6px] px-[16px] bg-custom-gray-200  rounded-full text-sm text-custom-gray-600`}
+              className={`py-[6px] px-[16px] bg-custom-gray-200 font-inter  rounded-full text-sm text-custom-gray-600`}
             >
               Payouts (22)
             </button>
             <button
-              className={`py-[6px] px-[16px] bg-[#146eb4] rounded-full text-sm text-[#fff]`}
+              className={`py-[6px] px-[16px] bg-[#146eb4] font-inter rounded-full text-sm text-[#fff]`}
             >
               Refunds (6)
             </button>
           </div>
 
           <div className=" mt-[24px] p-[12px] pb-0 rounded-[8px] bg-white">
-
             {/* table input and filter */}
 
             <div className="flex items-center justify-between ">
@@ -72,10 +70,11 @@ function Payout() {
                 <img
                   src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704744891/search_qx2ki6.svg"
                   alt="search-icon"
+                  className="mt-[2px]"
                 />
                 <input
                   className="font-galano w-full bg-inherit placeholder-[#999]
-                text-[14px] leading-[20px]
+                text-[14px] leading-[20px] pb-[3px]
                 "
                   type="text"
                   placeholder="Order ID or transaction ID"
@@ -99,14 +98,12 @@ function Payout() {
                   />
                 </div>
               </div>
-
             </div>
 
             {/* table */}
             <div className="mt-[10px] ">
               <Table data={refunds} />
             </div>
-
           </div>
         </div>
       </div>

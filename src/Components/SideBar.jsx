@@ -16,14 +16,6 @@ const Sidebar = () => {
             "
             >
               <div>
-                {/* <img
-                  src=""
-               
-                  height={"100%"}
-                  width={'42px'}
-                 
-                  style={{ borderRadius: "4px", }}
-                /> */}
                 <img
                   className="w-[43px] h-[39px] rounded"
                   src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704737193/enterprise_u6ujq7.png"
@@ -31,11 +23,11 @@ const Sidebar = () => {
                 />
               </div>
 
-              <div className=" flex  justify-between flex-col w-[108px] gap-[4px]">
-                <p className="font-galano text-white text-[15px] font-normal  leading-[22px] ">
+              <div className=" flex justify-between flex-col w-[108px] gap-[4px]">
+                <p className="font-galano text-white text-[15px] leading-[22px] ">
                   Nishyan
                 </p>
-                <p className=" text-custom-gray-300 text-[13px] font-[400px] underline leading-[14px] ">
+                <p className=" text-custom-gray-300 text-[13px] underline leading-[14px] ">
                   Visit store
                 </p>
               </div>
@@ -46,7 +38,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-[4px] font-inter">
+          <div className="flex flex-col gap-[4px] font-inter text-[#FFF]" >
             {sideBarOptionDetails.map((ele) => {
               return (
                 <NavLink key={ele.id} to={ele.path}>
@@ -62,6 +54,7 @@ const Sidebar = () => {
           </div>
         </div>
       </>
+
       <div className="bg-[#ffffff0d] rounded-[4px] w-[192px] mx-auto">
         <div className="py-[6px] px-[12px] flex items-center gap-[10px]  text-sm ">
           <div className="p-[6px] bg-[#495064] rounded-[4px] ">
@@ -69,7 +62,7 @@ const Sidebar = () => {
           </div>
           <div className="flex flex-col gap-[3px]">
             <span>Available credits</span>
-            <span className="text-white text-sm  font-[500]">222.10</span>
+            <span className="text-white text-sm font-[500]">222.10</span>
           </div>
         </div>
       </div>
