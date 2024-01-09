@@ -32,7 +32,7 @@ const Sidebar = () => {
               </div>
 
               <div className=" flex  justify-between flex-col w-[108px] gap-[4px]">
-                <p className="font-[Inter] text-white text-[15px] font-normal  leading-[22px] ">
+                <p className="font-galano text-white text-[15px] font-normal  leading-[22px] ">
                   Nishyan
                 </p>
                 <p className=" text-custom-gray-300 text-[13px] font-[400px] underline leading-[14px] ">
@@ -46,7 +46,7 @@ const Sidebar = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-[4px]">
+          <div className="flex flex-col gap-[4px] font-inter">
             {sideBarOptionDetails.map((ele) => {
               return (
                 <NavLink key={ele.id} to={ele.path}>

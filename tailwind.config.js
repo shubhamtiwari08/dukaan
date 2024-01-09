@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        galano: ['Galano Grotesque', 'sans-serif'],
+        inter:  [ "Inter, sans-serif"],
+        galano:["Galano, sans-serif"],
+        galanoBold:["Galano-bold, sans-serif"],
       },
       colors: {
         "custom-blue-800": "#1e2640",

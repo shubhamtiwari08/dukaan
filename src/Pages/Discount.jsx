@@ -2,7 +2,7 @@ import React from 'react'
 
 function Discount() {
   return (
-    <div>Discount</div>
+    <div >Discount</div>
   )
 }
 
