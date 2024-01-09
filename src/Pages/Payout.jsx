@@ -11,16 +11,9 @@ function Payout() {
         <p className="leading-[28px] font-semibold font-galano text-[20px] text-[#1a181e] ">
           Overview
         </p>
-        <div className="w-[140px] h-[36px] rounded-[4px] flex items-center  px-[14px] pb-[8px] gap-x-[6px] bg-[#ffffff] border-[1px] border-[#d9d9d9]">
-          <p className="leading-[24px] text-[16px] font-normal font-galano text-[#4D4D4D]   ">
-            This Month
-          </p>
-          <img
-            src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704807284/arrodown_rdlxkv.svg"
-            alt="dropdown"
-            className="w-4 mt-1"
-          />
-        </div>
+        <select name="month" id="month" className="w-[140px] h-[36px] rounded-[4px] flex items-center font-galano  px-[14px] gap-x-[6px] bg-[#ffffff] border-[1px] border-[#d9d9d9]">
+            <option value="current">This Month</option>
+        </select>
       </div>
 
       {/* amount cards */}
