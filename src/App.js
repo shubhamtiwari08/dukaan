@@ -6,8 +6,10 @@ import MainRoutes from "./Routings/MainRoutes";
 function App() {
   return (
     <div className="App flex items-start">
-      <Sidebar/>
-      <div className="w-full">
+       <div className="fixed top-0 left-0">
+       <Sidebar/>
+       </div>
+      <div className="w-full ml-52">
         {" "}
         <Header />
         <MainRoutes />

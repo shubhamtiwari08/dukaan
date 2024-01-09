@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        galano: ['Galano Grotesque', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
