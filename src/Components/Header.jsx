@@ -18,12 +18,12 @@ function Header({handleToggle}) {
   return (
     <header >
         <div className="grid grid-rows-1 grid-cols-3 px-[32px] py-[12px] gap-[16px] border-2 bg-custom-white-800 justify-between ">
-        <div onClick={handleToggle}><FontAwesomeIcon icon={faBars} className='text-3xl mt-[5px]'/></div>
+        <div onClick={handleToggle} className='block lg:hidden'><FontAwesomeIcon icon={faBars} className='text-3xl mt-[5px]'/></div>
       <div className="flex items-center gap-x-[16px] ">
         <p className="text-[20px] font-galano font-semibold leading-6 pb-2 capitalize">{title || " Home"}</p>
-        <div className="flex items-center gap-x-[6px] text-[12px] leading-[16px] text-[#4d4d4d] font-normal lg:block hidden">
-          <img src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704782319/blackquestion_h0oxbs.svg" alt="question-mark" />
-          <p>How it works</p>
+        <div className="flex w-40 items-center gap-x-[6px] text-[12px] leading-[16px] text-[#4d4d4d] font-normal lg:block hidden ">
+          <img src="https://res.cloudinary.com/dmyost0l3/image/upload/v1704782319/blackquestion_h0oxbs.svg" alt="question-mark" className='inline-block mr-2'  />
+          <span>How It Works</span>
         </div>
       </div>
 
